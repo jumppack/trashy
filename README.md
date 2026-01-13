@@ -1,8 +1,8 @@
 # Trashy Tracker
 
-**Trash Rotation Tracker for KM, NP, PS, LS**
+**Trash Rotation Tracker for KM, NP, PS, LS (v2)**
 
-This project generates a printable trash rotation tracker spreadsheet. It tracks whose turn it is to take out the trash among the four participants: KM, NP, PS, and LS.
+This project generates a high-density, printable trash rotation tracker designated for A4 printing. It utilizes the **"Dent Method"** for marking completion without pens.
 
 ## Project Structure
 
@@ -19,8 +19,8 @@ Trashy Tracker/
 ├── docs/                  # Documentation and resources
 │   └── resources/
 │       └── harmonious_household.md # Strategy details
-└── output/                # Generated files
-    └── Trash_Rotation_Printable.xlsx
+└── out_v2/                # Generated files (v2)
+    └── Trash_Rotation_Printable_v2.xlsx
 ```
 
 ## Setup and Installation
@@ -39,36 +39,25 @@ Run the generation script to create the Excel file:
 python src/generate_tracker.py
 ```
 
-The output file `Trash_Rotation_Printable.xlsx` will be generated in the `output/` directory.
+The output file `Trash_Rotation_Printable_v2.xlsx` will be generated in the `out_v2/` directory. Open this file and **Print to A4** (Scaling is set to Fit on One Page).
 
 ## Git Repository Setup
 
-To set up this project on GitHub:
+The project is hosted at: [https://github.com/jumppack/trashy](https://github.com/jumppack/trashy)
 
-1.  **Create a New Repository on GitHub:**
-    *   Go to [https://github.com/new](https://github.com/new).
-    *   Name the repository `trashy-tracker` (or your preferred name).
-    *   Do **not** check "Initialize this repository with a README", .gitignore, or license (we already have them).
-    *   Click "Create repository".
-
-2.  **Push to GitHub:**
-    Run the following commands in your terminal (inside the project folder):
-
-    ```bash
-    git add .
-    git commit -m "Initial commit: Project organization and tracker script"
-    git branch -M main
-    git remote add origin https://github.com/YOUR_USERNAME/trashy-tracker.git
-    git push -u origin main
-    ```
-    *(Replace `YOUR_USERNAME` with your actual GitHub username)*.
+To push updates:
+```bash
+git add .
+git commit -m "Your commit message"
+git push
+```
 
 ## How it Works
 
-The script uses `pandas` and `xlsxwriter` to create a formatted Excel sheet. It creates a simple rotation flow:
-`KM -> NP -> PS -> LS`
+`KM -> NP -> PS -> LS -> (Next Row)`
 
-Find the first empty box and mark it done!
+**The Dent Method:**
+Instead of looking for a pen, simply find the first empty bracket box `[     ]` and press your house key firmly into the paper to create a visible dent/shadow.
 
 ## Methodology
 
