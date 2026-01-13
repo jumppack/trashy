@@ -19,8 +19,8 @@ Trashy Tracker/
 ├── docs/                  # Documentation and resources
 │   └── resources/
 │       └── harmonious_household.md # Strategy details
-└── out_v2/                # Generated files (v2)
-    └── Trash_Rotation_Printable_v2.xlsx
+└── output/                # Generated files
+    └── Trash_Rotation_Printable.xlsx
 ```
 
 ## Setup and Installation
@@ -39,7 +39,7 @@ Run the generation script to create the Excel file:
 python src/generate_tracker.py
 ```
 
-The output file `Trash_Rotation_Printable_v2.xlsx` will be generated in the `out_v2/` directory. Open this file and **Print to A4** (Scaling is set to Fit on One Page).
+The output file `Trash_Rotation_Printable.xlsx` will be generated in the `output/` directory. Open this file and **Print to A4** (Scaling is set to Fit on One Page).
 
 ## Git Repository Setup
 
