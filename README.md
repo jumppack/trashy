@@ -25,42 +25,21 @@ Trashy Tracker/
 
 ## Setup and Installation
 
-1.  **Install Dependencies:**
-    It is recommended to use a virtual environment.
-    ```bash
-    pip install -r requirements.txt
-    ```
+1. **Install Dependencies:**
+   It is recommended to use a virtual environment.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
-Run the generation script to create the Excel file:
-
-```bash
-python src/generate_tracker.py
-```
-
-The output file `Trash_Rotation_Printable.xlsx` will be generated in the `output/` directory. Open this file and **Print to A4** (Scaling is set to Fit on One Page).
-
-### Custom Generation using Notebook
-
 You can generate a tracker with **custom names** using the provided Jupyter Notebook.
 
-1.  Open `notebooks/Trash_tracker.ipynb`.
-2.  Edit the `names` list in the configuration cell (e.g., `names = ["Alice", "Bob", "Charlie"]`).
-3.  Run all cells to generate `Trash_Rotation_Printable_Custom.xlsx` in the `output/` directory.
+1. Open `notebooks/Trash_tracker.ipynb`.
+2. Edit the `names` list in the configuration cell (e.g., `names = ["Alice", "Bob", "Charlie"]`).
+3. Run all cells to generate `Trash_Rotation_Printable_Custom.xlsx` in the `output/` directory.
 
 > **Note:** The default script and notebook are configured to generate **50 rows** (weeks) by default.
-
-## Git Repository Setup
-
-The project is hosted at: [https://github.com/jumppack/trashy](https://github.com/jumppack/trashy)
-
-To push updates:
-```bash
-git add .
-git commit -m "Your commit message"
-git push
-```
 
 ## How it Works
 
